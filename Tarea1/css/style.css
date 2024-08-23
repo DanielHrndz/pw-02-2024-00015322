@@ -217,3 +217,7 @@ article > figure ~ p{
   width: 95%;
   padding-bottom: 15px;
 }
+
+footer>span{
+  font-weight: 800;
+}
