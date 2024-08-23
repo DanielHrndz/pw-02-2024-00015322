@@ -1,0 +1,219 @@
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: black;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: black;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid white;
+  z-index: 1000;
+  padding: 0.5em 2em;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div-nav > a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em 2em;
+  font-weight: 700;
+}
+
+.div-nav > a:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.title-nav {
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.div-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 4.5em;
+  flex: 1;
+}
+
+.aside-img {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid white;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.avatar {
+  border-radius: 100%;
+  width: 65%;
+  margin: 1.5em;
+}
+
+.grid-square {
+  width: 90%;
+  max-height: 100%;
+  padding-bottom: 8em;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+  gap: 1em; /* Espacio entre elementos de la cuadrícula */
+}
+
+.grid-square > article {
+  background-color: #333; /* Color de fondo de la tarjeta */
+  border-radius: 2px; /* Bordes redondeados */
+  overflow: hidden; /* Oculta cualquier contenido que se desborde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra sutil para dar efecto de elevación */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para efectos de hover */
+  display: flex;
+  gap: 1;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-square > article:hover {
+  transform: translateY(-5px); /* Eleva la tarjeta ligeramente al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Aumenta la sombra para efecto de profundidad */
+}
+
+article > figure {
+  margin: 0; /* Elimina el margen por defecto de figure */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+figure > img {
+  width: 100%; /* Ajusta la imagen al ancho del contenedor */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+}
+
+.grid-square > figcaption {
+  margin-top: 0.5em; /* Espacio entre la imagen y el título */
+  color: white; /* Color del texto */
+  font-size: 1rem; /* Tamaño del texto del título */
+}
+
+.grid-square > p {
+  margin-top: 0.5em; /* Espacio entre el título y el texto descriptivo */
+  color: white; /* Color del texto */
+  font-size: 0.9rem; /* Tamaño del texto descriptivo */
+}
+
+
+main {
+  width: 65%;
+  margin-left: 35%;
+  padding: 2em 1em;
+  color: white;
+  padding-bottom: 1em;
+}
+
+footer {
+  padding: 2.5em 2em;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-top: 1px solid white;
+  position: fixed;
+  bottom: 0; /* Fija el footer en la parte inferior */
+  left: 0;
+  width: 100%; /* Asegura que el footer ocupe todo el ancho */
+  z-index: 10;
+}
+
+aside > h1,
+aside > h2 {
+  color: white;
+  padding: 0.25em 1em;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0.5em 0;
+  font-size: 1.25rem;
+}
+
+strong {
+  text-transform: capitalize;
+}
+
+main > h1 {
+  text-align: center;
+}
+
+figcaption{
+  padding: 15px 0 0 0 ;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+article > figure ~ p{
+  width: 95%;
+  text-align: justify;
+}
+
+.link-exp > a{
+  text-align: start;
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.link-exp>a:hover{
+  color: red;
+}
+
+.link-exp{
+  text-align: start;
+  width: 95%;
+  padding-bottom: 15px;
+}
