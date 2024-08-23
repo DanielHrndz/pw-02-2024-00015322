@@ -221,3 +221,21 @@ article > figure ~ p{
 footer>span{
   font-weight: 800;
 }
+
+video ~ h2{
+  text-align: center;
+}
+
+.hobbies-article{
+  padding: 1em 0;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-hobbies{
+  padding-bottom: 8em;
+}
