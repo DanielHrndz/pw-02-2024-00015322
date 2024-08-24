@@ -1,0 +1,61 @@
+h1 {
+    color: #51D1F6;
+}
+
+h1 span{
+    color: green;
+}
+
+h2:nth-of-type(3){
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+ul > li:nth-of-type(even){
+    color: green;
+}
+
+html{
+    background-image: url("https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABf_vkYSzY2EsbRFAOJOS3_ZdreU4YoqzdzVZf-f1CEP9ndmI3705aHteXy3ZD7tLH4YbavoJT3lPK9luZDLgQxhQOBw1tLuBzxFG.jpg?r=b99");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.list{
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+ul{
+    width: 80%;
+}
+
+table{
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:skyblue;
+    width: 50%;
+    margin: auto;
+}
+td, th, th{
+    border: 1px solid black;
+}
+
+a{
+    color: yellow;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+address{
+    font-weight: 700;
+}
+
+.big{
+    color: #A020F0;
+}
